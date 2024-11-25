@@ -5,7 +5,7 @@ const esp_local_ip = "192.168.8.149";
 // const esp_local_ip = "172.17.60.187:3000"; // For testing
 
 const make_query = async (ip_address = esp_local_ip, endpoint= "/") => {
-  let url = `http://${ip_address}${endpoint}`;
+  let url = `https://${ip_address}${endpoint}`;
   console.log("the url is :" + url);
   try {
     const response = await fetch(url);
